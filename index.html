@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SMKS YP 17 Cilegon</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top" id="navbarbar">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex" href="#"
+          ><img
+            src="assets\img\logosekolah.png"
+            alt="logo sekolah"
+            style="width: 3em"
+          />
+          &nbsp;
+          <h1 style="font-size: 0.9em; padding-top: 1em" class="">
+            SMKS YP 17 CILEGON
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-auto justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-lg-3">
+              <a
+                class="nav-link active navbar-padding"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="height: 40px"
+                id="liveAlertBtn"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--Alerts-->
+
+    <div id="liveAlertPlaceholder"></div>
+
+    <!--Carousel-->
+
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="assets/img/Slide1.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+ 
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="assets/img/Slide2.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="assets/img/Slide3.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Content-->
+    <!--Heading 3-->
+      <h3 class="d-flex" id="#scrollspyHeading1" style="justify-content: center; padding-top: 6rem">
+        <i class="bi bi-newspaper"></i> &nbsp; Berita terbaru
+      </h3>
+      <!--Cards-->
+      <div
+        class="row row-cols-1 row-cols-md-3 g-4 justify-content-center"
+        style="padding: 4rem"
+      >
+        <div class="col-3 card-size">
+          <div
+            class="card h-100"
+            data-bs-toggle="modal"
+            data-bs-target="#artikel1"
+          >
+            <img
+              src="assets/img/timvoli.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tim Voli Juara 2 POPKOT </h5>
+              <p class="card-text">
+              Halllooo! Malmingan pada kemana nii?? Pada jalan sama doi yaa?🤗 Kalo mimin siih punya kabar gembiraa nihh😉, kira-kira apaa yaa??🧐🤨...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 card-size">
+          <div
+            class="card h-100"
+            data-bs-toggle="modal"
+            data-bs-target="#artikel2"
+          >
+            <img
+              src="assets/img/penyaluran.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Penyaluran bantuan ke semeru</h5>
+              <p class="card-text">
+                Penyaluran Bantuan Untuk Korban Bencana Gunung Semeru ✨
+                Akhirnya, hari ini perwakilan tim dari SMKS YP 17 Cilegon sudah berhasil menyalurkan bantuan yang telah dikumpulkan beberapa waktu belakang ini...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 card-size">
+          <div
+            class="card h-100"
+            class="card h-100"
+            data-bs-toggle="modal"
+            data-bs-target="#artikel3"
+          >
+            <img
+              src="assets/img/mou.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Penandatanganan MoU</h5>
+              <p class="card-text">
+                Penandatanganan MoU dengan PT.DumbWays Indonesia Teknologi dan PT. Indomarco Prismatama (Indomaret)...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 card-size d-none d-sm-block">
+          <div
+            class="card h-100"
+            data-bs-toggle="modal"
+            data-bs-target="#artikel4"
+          >
+            <img
+              src="assets/img/gebyar.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gebyar Tata Rias 2021</h5>
+              <p class="card-text">
+                Hari ini mimin mau share salah satu kegiatan dr ekskul kesenian lohhh 😍 Jadi, dalam rangka ulang tahun Hotel Jayakarta Anyer...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div
+      class="portfolio-modal modal fade"
+      id="artikel1"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+                  <h2 class="text-uppercase">Tim Voli Juara 2 POPKOT</h2>
+                  <p class="item-intro text-muted">
+                    24 Febuari 2022
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/timvoli.jpg"
+                    alt="..."
+                  />
+                  <p>
+                    Halllooo! Malmingan pada kemana nii?? Pada jalan sama doi yaa?🤗 Kalo mimin siih punya kabar gembiraa nihh😉, kira-kira apaa yaa??🧐🤨
+                    Jadi, Tanggal 8-9 Febuary SMKS YP 17 Cilegon mengikuti POPKOT ( Pekan Olahraga Pelajar Kota Cilegon ) dan meraih juara 2 lomba voli putri lhoo🤩🤩🤩
+                    KBL KBL kerenn bgt lhoo kaliaann!🤩😱 mimin ikut seneng dehhh. Jadi olahraga mengajarkan kita arti sesungguhnya dari sebuah tim, mulai dari sportifitas, kekompakan dan kerja sama tim☺️☺️
+                    Sekali lagi congrats buat temen-temen yg berhasil memenangkan lomba yang mewakili SMKS YP 17 Cilegon🎉🎉
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="artikel2"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+                  <h2 class="text-uppercase">Penyaluran bantuan ke semeru</h2>
+                  <p class="item-intro text-muted">
+                    2 Januari 2022
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/penyaluran.jpg"
+                    alt="..."
+                  />
+                  <p>
+                    Penyaluran Bantuan Untuk Korban Bencana Gunung Semeru ✨
+                    Akhirnya, hari ini perwakilan tim dari SMKS YP 17 Cilegon sudah berhasil menyalurkan bantuan yang telah dikumpulkan beberapa waktu belakang ini secara langsung ke tempat lokasi kejadian di Gunung Semeru.
+                    Mimin mewakili pihak sekolah ingin berterimakasih kepada semua pihak yang sudah turut membantu dalam proses penggalangan dana, baik yang turun kejalan dan juga pihak-pihak lainnya yg sudah percaya pd kami untuk menyalurkan bantuan nya 🙏🏻
+                    Semoga semua bantuan ini dapat bermanfaat bagi mereka yang membutuhkan. Tidak lupa juga mari kita sama-sama berdoa, agar kondisi disana dapat segera membaik dan pulih seperti sedia kala ❤️
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="artikel3"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->                  <!-- Project details-->
+                  <h2 class="text-uppercase">Penandatanganan MoU dengan PT.DumbWays Indonesia Teknologi dan PT. Indomarco Prismatama (Indomaret)</h2>
+                  <p class="item-intro text-muted">
+                    5 November 2021
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/mou.jpg"
+                    alt="..."
+                  />
+                  <p>
+                    Penandatanganan MoU dengan PT.DumbWays Indonesia Teknologi dan PT. Indomarco Prismatama (Indomaret) 🤩⁣
+                    Mungkin ada yg tanya apa sih kak gunanya hal tersebut!? 🤔 Hal ini bergunaaa bgt ya buat semua lulusan dari SMKS YP 17 Cilegon, karena semakin banyak kerjasama tentu saja semakin memperluas dan mempermudah peluang kita untuk bisa segera mendapatkan pekerjaan setelah lulus, dalam hal ini perusahaan juga turut diuntungkan karena dapat menyerap tenaga kerja langsung di SMKS YP 17 Cilegon.⁣ SMKS YP 17 Cilegon sendiri menjalin kerjasama dengan banyak perusahaan, mulai dari perusahaan lokal, nasional bahkan internasional. Sehingga banyak banget loh temen-temen alumni yg bahkan belum menerima SKL tapi sudah diterima bekerja diperusahaan-perusahaan yg bekerja sama dengan kita 🤗
+                  </p>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="artikel4"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+                  <h2 class="text-uppercase">Gebyar tata rias 2021</h2>
+                  <p class="item-intro text-muted">
+                    5 Juni 2021
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/gebyar.jpg"
+                    alt="..."
+                  />
+                  <p>
+                    Hallo everyone!⁣ Apa kabarnyaaa nih kalian semuaa? Semoga kalian semua dalam keadaan yang baik dan sehat ya ❤⁣
+                    Hari ini mimin mau share salah satu kegiatan dr ekskul kesenian lohhh 😍 Jadi, dalam rangka ulang tahun Hotel Jayakarta Anyer mereka mengadakan acara gitu. Nah, kebetulan ekskul kesenian (Tari tradisional) diundang untuk mengisi openingnya lohh 😍⁣
+                    Yuk, buruan join sama ekskul yg ada di SMKS YP 17 Cilegon!! Infonya ada di highlight "Ekstrakurikuler". Kalo yg kalian cari blm ada, itu karna dr pihak ekskul blm kirim posternya ke kita. Jadi, harap sabar ya temen-temen.⁣
+                    See u on next post! 🙌
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer bg-light">
+    <!--Contact Form-->
+    <div class="container" style="padding-top: 1em;">
+      <div class="row">
+        <div class="col-md-5 mr-auto">
+          <h2>Contact Us</h2>
+          <p class="mb-5">If you have any questions, please feel free to drop me a line. If you don't get an answer immediately, I might just be travelling through the middle of nowhere. I'll get back to you as soon as I can. That's a promise!</p>
+
+          <ul class="list-unstyled pl-md-5 mb-5">
+            <li class="d-flex text-black mb-2">
+              <span class="mr-3"><span class="bi bi-map"> &nbsp; </span></span> Jl. Raden Sastradikarta No.01, Masigit, Kec. Cilegon, <br> Kota Cilegon, Banten 42411
+            </li>
+            <li class="d-flex text-black mb-2"><span class="mr-3"><span class="bi bi-telephone"> &nbsp; </span></span> (0254) 391066</li>
+            <li class="d-flex text-black"><span class="mr-3"><span class="bi bi-envelope"> &nbsp; </span></span> staff@smksyp17cilegon.com </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <form class="mb-5">
+            <div class="row">                                         
+              <div class="col-md-12 form-group">
+                <label for="name" class="col-form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="text" class="form-control" name="email" id="email">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="message" class="col-form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    <!--Copyright-->
+    <div class="container">
+      <div class="row align-items-center text-center">
+        <div class="col-lg-4 text-lg-start">
+          Copyright &copy; Dimas Khaerudin
+        </div>
+        <div class="col-lg-4 my-3 my-lg-0 text-lg-center">
+          <a class="btn btn-social mx-2" href="https://twitter.com/potatotan666" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-social mx-2"
+            href="https://www.facebook.com/potatotan666/"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-social mx-2"
+            href="https://www.linkedin.com/in/dimaskhaerudin/"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        
+        <div class="col-lg-4 text-lg-end">
+          <a class="link-dark text-decoration-none me-3" href="#!"
+            >Privacy Policy</a
+          >
+          <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+
+<!--js alert-->
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var counter = 0;
+
+const alert = (message, type, multiplier) => {
+  const wrapper = document.createElement('div') 
+  console.log(multiplier)
+  if (counter == 1) { 
+    while (alertPlaceholder.hasChildNodes()) {
+          alertPlaceholder.removeChild(alertPlaceholder.firstChild);
+    }
+    counter = 0
+    return null
+  } 
+   counter = multiplier
+   console.log('--counter', counter)
+   wrapper.innerHTML = [
+     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+     `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+   ].join('')
+  alertPlaceholder.append(wrapper)
+ }
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Fitur Login belum tersedia', 'danger', counter +1 )
+  })
+}
+</script>
